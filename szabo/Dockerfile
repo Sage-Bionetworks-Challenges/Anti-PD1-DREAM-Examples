@@ -1,6 +1,6 @@
 FROM r-base:4.0.2
 
-RUN R -e "install.packages('data.tables', repos = 'http://cran.us.r-project.org')"
+RUN R -e "install.packages('data.table', repos = 'http://cran.us.r-project.org')"
 RUN R -e "install.packages('BiocManager', repos = 'http://cran.us.r-project.org')"
 RUN R -e "BiocManager::install('NOISeq')"
 
