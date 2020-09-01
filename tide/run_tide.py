@@ -22,8 +22,9 @@ def tide_normalize(filepath, log_trans_flag=True):
     row_averages = tpmdf.mean(axis=1)
     # Subtract row mean from each value in row
     tpmdf = tpmdf.sub(row_averages, axis=0)
-    tpmdf.transpose().to_csv("log_2_mean_normed.txt",
-                             sep="\t")
+    tpmdf.to_csv("log_2_mean_normed.txt", sep="\t")
+    return "log_2_mean_normed.txt"
+
 
 def cli():
     """Build CLI"""
@@ -38,7 +39,7 @@ def main():
     """Invoke tide"""
     args = cli()
     normalized_tpm_path = tide_normalize(args.tpm_file)
-    tide_cmd = ["tidepy", normalized_tpm_path, "output.txt", "-c", "NSCLC"]
+    tide_cmd = ["tidepy", normalized_tpm_path, "-o", "output.txt", "-c", "NSCLC"]
     subprocess.check_call(tide_cmd)
 
     tide_scoresdf = pd.read_csv("output.txt")
