@@ -20,7 +20,7 @@ Here we describe how to build and locally run example models provided for Challe
     docker build -t awesome-antipd1-q1-model:v1 .
     ```
 
-## Run the model locally on synthetic EHR data
+## Run the model locally on synthetic data
 
 1. Go to the page of the [synthetic dataset](https://www.synapse.org/#!Synapse:syn21978034) provided by the Anti-PD1 DREAM challenge. This page provides useful information about the format and content of the synthetic data.
 
@@ -48,7 +48,7 @@ Here we describe how to build and locally run example models provided for Challe
         awesome-antipd1-q1-model:v1
     ```
 
-6. The predictions generated are saved to `/output/predictions.csv`. The column `patientID` includes the ID of the patient and the column `prediction` the probabily for the patient to be COVID-19 positive.
+6. The predictions generated are saved to `/output/predictions.csv`.
 
     ```text
     $ cat output/predictions.csv
