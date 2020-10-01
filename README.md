@@ -22,15 +22,16 @@ Here we describe how to build and locally run example models provided for Challe
 
 ## Run the model locally on synthetic data
 
-1. Go to the page of the [synthetic dataset](https://www.synapse.org/#!Synapse:syn21978034) provided by the Anti-PD1 DREAM challenge. This page provides useful information about the format and content of the synthetic data.
+1. Go to the page of the [synthetic dataset](https://www.synapse.org/#!Synapse:syn22360502) provided by the Anti-PD1 DREAM challenge. This page provides useful information about the format and content of the synthetic data.
 
-2. Download the file [synthetic_data.tar.gz]() to the location of this example folder (only available to registered participants).
+2. Download the file [CM_026_formatted_synthetic_data_subset.tar
+](https://www.synapse.org/#!Synapse:syn22360555) to the location of this example folder (only available to registered participants).
 
 3. Extract the content of the archive
 
     ```bash
-    $ tar xvf synthetic_data.tar.gz
-    x synthetic_data/
+    $ tar xvf CM_026_formatted_synthetic_data_subset.tar
+    x CM_026_formatted_synthetic_data_subset/
     ```
 
 4. Create an `output` folder
@@ -43,7 +44,7 @@ Here we describe how to build and locally run example models provided for Challe
 
     ```bash
     docker run \
-        -v $(pwd)/synthetic_data/:/data:ro \
+        -v $(pwd)/CM_026_formatted_synthetic_data_subset/:/data:ro \
         -v $(pwd)/output:/output:rw \
         awesome-antipd1-q1-model:v1
     ```
