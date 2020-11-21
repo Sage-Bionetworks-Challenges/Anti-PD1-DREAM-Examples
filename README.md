@@ -2,7 +2,7 @@
 
 ## Overview
 
-Here we describe how to build and locally run example models provided for Challenge Question 1 of the [Anti-PD1 DREAM Challenge](https://www.synapse.org/#!Synapse:syn18404605/wiki/589611).
+Here we describe how to build and locally run example models provided for Challenge Question 1 of the [Anti-PD1 DREAM Challenge](https://www.synapse.org/#!Synapse:syn18404605/wiki/607226).
 
 * [szabo model](szabo) (R example)
 * [tide](tide) (Python example)
@@ -22,10 +22,10 @@ Here we describe how to build and locally run example models provided for Challe
 
 ## Run the model locally on synthetic data
 
-1. Go to the page of the [synthetic dataset](https://www.synapse.org/#!Synapse:syn22360502) provided by the Anti-PD1 DREAM challenge. This page provides useful information about the format and content of the synthetic data.
+1. Go to the page of the [synthetic dataset](https://www.synapse.org/#!Synapse:syn18404605/wiki/607227) provided by the Anti-PD1 DREAM challenge. This page provides useful information about the format and content of the synthetic data.
 
 2. Download the file [CM_026_formatted_synthetic_data_subset.tar
-](https://www.synapse.org/#!Synapse:syn22360555) to the location of this example folder (only available to registered participants).
+](https://www.synapse.org/#!Synapse:syn22360672) to the location of this example folder (only available to registered participants).
 
 3. Extract the content of the archive
 
@@ -62,4 +62,4 @@ Here we describe how to build and locally run example models provided for Challe
 
 ## Submit this model to the Anti-PD1 DREAM Challenge
 
-This model meets the requirements for models to be submitted to Question 1 of the Anti-PD1 DREAM Challenge. Please see [this page]() for instructions on how to submit this model.
+This model meets the requirements for models to be submitted to Question 1 of the Anti-PD1 DREAM Challenge. Please see [this page](https://www.synapse.org/#!Synapse:syn18404605/wiki/607231) for instructions on how to submit this model.
