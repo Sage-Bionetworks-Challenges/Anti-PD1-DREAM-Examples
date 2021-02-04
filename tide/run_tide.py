@@ -48,6 +48,7 @@ def main():
     preddf = preddf.reset_index()
     preddf.rename(columns={"index": "patientID",
                            "TIDE": "prediction"}, inplace=True)
+    preddf['prediction'] = preddf['prediction'] * -1
     preddf.to_csv(args.output, index=False)
 
 
